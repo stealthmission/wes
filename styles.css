@@ -13,17 +13,17 @@ body, html {
 }
 
 .bgImage {
-  background-image: url("../images/bgImage.jpg");;
+  background-image: url("images/bgImage.jpg");;
   min-height: 100%;
 }
 
 .bgImage2 {
-  background-image: url("../images/bgImage2.jpg");
+  background-image: url("images/bgImage2.jpg");
   min-height: 400px;
 }
 
 .bgImage3 {
-  background-image: url("../images/bgImage3.jpg");
+  background-image: url("images/bgImage3.jpg");
   min-height: 400px;
 }
 
