@@ -3,269 +3,259 @@
 <title>Wes Gilmour</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/logo2.png">
-
-    
 <body>
 
 <!-- navigation -->
-<div class="w3-top">
-  <div class="w3-bar" id="theNavig">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+<div class="top">
+  <div class="navBar" id="navigation">
+    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="#home" class="barItem button">HOME</a>
+    <a href="#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
     </a>
   </div>
 
   <!-- small navigation -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
+    <a href="#about" class="barItem button" onclick="click()">ABOUT</a>
+    <a href="#projects" class="barItem button" onclick="click()">PROJECTS</a>
+    <a href="#contact" class="barItem button" onclick="click()">CONTACT</a>
+    <a href="#" class="barItem button">SEARCH</a>
   </div>
 </div>
 
-<!-- parallax bgImage and logo -->
-<div class="bgImage w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-black w3-xlarge w3-wide w3-animate-opacity"><img src="images/logo1.1.png"> <span class="w3-hide-small ">DESiGNS</span></span>
+<!-- bgImage and logo -->
+<div class="bgImage imageContainer opacity" id="home">
+  <div class="middle" style="white-space:nowrap;">
+    <span class="centerText reallyBig wide opacityTime"><img src="images/logo1med.png"> <span class="hideSmall black ">CREATIVE WORKS</span></span>
   </div>
 </div>
 
 
-    <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- page container -->
+<div class="pageContent marginTop" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+  <!-- grid -->
+  <div class="padding">
   
-    <!-- Left Column -->
-    <div class="w3-third">
+    <!-- left column -->
+    <div class="third">
     
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
+      <div class="white greyText boxShadow">
+        <div class="imageContainer">
           <img src="images/profilepic.jpg" style="width:100%" alt="profilePic">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Wes MacLean Gilmour</h2>
+          <div class="bottomLeft container blackText">
+            <h2 class="greyPurpleText">Wes MacLean Gilmour</h2>
           </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Fabricator | Instructor | Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>wes.gilmour@mail.com</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>(805) 501-7106</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>San Diego, CA</p>
+        <div class="container">
+          <p><i class="fas fa-user-tie fa-fw marginRight large seafoamText"></i>Fabricator | Instructor | Developer</p>
+          <p><i class="fa fa-inbox fa-fw marginRight large seafoamText"></i>wes.gilmour@gmail.com</p>
+          <p><i class="fa fa-phone-square fa-fw marginRight large seafoamText"></i>(805) 501-7106</p>
+          <p><i class="fas fa-city fa-fw marginRight large seafoamText"></i>San Diego, CA</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p class="large"><b><i class="fas fa-laptop-code fa-fw marginRight seafoamText"></i>Proficiencies</b></p>
           <p>HTML</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
+          <div class="lightGrey xlargeBorder smallFont">
+            <div class="container centerText xlargeBorder otherGreen" style="width:90%"><i class="fab fa-html5 whiteishText"></i></div>
           </div>
           <p>JavaScript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          <div class="lightGrey xlargeBorder smallFont">
+            <div class="container centerText xlargeBorder otherGreen" style="width:80%">
+              <i class="fab fa-js-square whiteishText"></i>
+            </div>
+          </div>
+          <p>CSS</p>
+          <div class="lightGrey xlargeBorder smallFont">
+            <div class="container centerText xlargeBorder otherGreen" style="width:75%"><i class="fab fa-css3 whiteishText"></i></div>
           </div>
           <p>PHP</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          <div class="lightGrey xlargeBorder smallFont">
+            <div class="container centerText xlargeBorder otherGreen" style="width:50%"><i class="fab fa-php whiteishText"></i></div>
           </div>
-          <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            <p>Python</p>
+          <div class="lightGrey xlargeBorder smallFont">
+            <div class="container centerText xlargeBorder otherGreen" style="width:50%"><i class="fab fa-python whiteishText"></i></div>
           </div>
-            
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Other</b></p>
+          <p class="large"><b><i class="fa fa-microchip fa-fw marginRight seafoamText"></i>Skills</b></p>
           <p>Automotive Repair</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          <div class="lightGrey xlargeBorder">
+            <div class="xlargeBorder otherGreen" style="height:24px;width:100%"></div>
           </div>
           <p>Electric bicycle fabrication</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          <div class="lightGrey xlargeBorder">
+            <div class="xlargeBorder otherGreen" style="height:24px;width:85%"></div>
           </div>
           <p>Yoga and Aerial instructor</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          <div class="lightGrey xlargeBorder">
+            <div class="xlargeBorder otherGreen" style="height:24px;width:80%"></div>
           </div>
           <br>
         </div>
       </div><br>
 
-    <!-- End Left Column -->
+    <!-- left column -->
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
+    <!-- right column -->
+    <div class="twoThirds">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>15+ years automototive repair</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2006 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+      <div class="container otherboxShadow white marginBottom">
+        <h2 class="greyText padding16"><i class="fas fa-folder-open fa-fw marginRight xxlargeFont seafoamText"></i>Professions</h2>
+        <div class="container">
+          <h5 class="opacity"><b>Automotive repair</b></h5>
+          <h6 class="seafoamText"><i class="fas fa-tachometer-alt fa-fw marginRight"></i>Jan 2006 - <span class="tag otherGreen round">Current</span></h6>
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
-          
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Electric bicycle fabrication</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-          
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Yoga and Aerial instructor</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - Mar 2020</h6>
+        <div class="container">
+          <h5 class="opacity"><b>Electric bicycle fabrication</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-leaf fa-fw marginRight"></i>Feb 2018 - <span class="tag otherGreen round">Current</span></h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
-
+        <div class="container">
+          <h5 class="opacity"><b>Yoga and Aerial instructor</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-child fa-fw marginRight"></i>Jun 2014 - Mar 2020</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+          <hr>
+          <div class="container">
+          <h5 class="opacity"><b>Sheet metal fabricator extraordinaire</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-fighter-jet fa-fw marginRight"></i>1999 - <span class="tag otherGreen round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Automotive Technology @ Miramar College</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2011 - Jun 2014</h6>
+      <div class="container otherboxShadow white marginBottom">
+        <h2 class="greyText padding16"><i class="fas fa-university fa-fw marginRight xxlargeFont seafoamText"></i>Education</h2>
+        <div class="container">
+          <h5 class="opacity"><b>Automotive Technology @ Miramar College</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-car fa-fw marginRight"></i>Feb 2011 - Jun 2014</h6>
+          <p>Associate of Science</p>
+          <hr>
+        </div>
+        <div class="container">
+          <h5 class="opacity"><b>Web Development @ Mesa College</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-desktop fa-fw marginRight"></i>2015 - 2021</h6>
           <p>Associate of Science Degree</p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Development @ Mesa College</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2021</h6>
-          <p>Associate of Science Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>300+ hour Yoga Teacher Training</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+        <div class="container">
+          <h5 class="opacity"><b>500+ hour Yoga Teacher Training</b></h5>
+          <h6 class="seafoamText"><i class="fa fa-male fa-fw marginRight"></i>2014 - <span class="tag otherGreen round">Current</span></h6>
           <p>(RYS) Certification</p><br>
         </div>
       </div>
 
-    <!-- End Right Column -->
+    <!-- right column -->
     </div>
     
-  <!-- End Grid -->
+  <!-- grid -->
   </div>
   
-  <!-- End Page Container -->
+  <!-- container -->
 </div>
-    
 
 
 
-<!-- parallax bgImage2 and portfolio -->
-<div class="bgImage2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+<!-- bgImage2 and portfolio -->
+<div class="bgImage2 imageContainer opacity">
+  <div class="middle">
+    <span class="xxlargeFont whiteishText wide">PROJECTS</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY PROJECTS</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<!-- projects -->
+<div class="pageContent container padding64" id="projects">
+  <h3 class="centerText">MY WORK</h3>
+  <p class="centerText"><em>Here are some of my projects</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+  <!-- responsive grid  -->
+  <div class="-padding centerText">
+    <div class="">
+      
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <div class="">
+      
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    <div class="">
+      
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    <div class="">
+      
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+  <div class="padding centerText margin16">
+    <div class="">
+     
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    <div class="">
+     
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    <div class="">
+      
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
+    <div class="">
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+    <button class="button morePadding lightGrey" style="margin-top:64px">SEE MORE</button>
   </div>
 </div>
 
-<!-- parallax bgImage2 and contact -->
-<div class="bgImage3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+<!-- bgImage3 and contacts -->
+<div class="bgImage3 imageContainer opacity">
+  <div class="middle">
+     <span class="xxlargeFont whiteishText wide">CONTACT</span>
   </div>
 </div>
 
 <!-- contacts -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <p class="w3-center"><em>Send me a message!</em></p>
+<div class="pageContent container padding64" id="contact">
+  <p class="centerText"><em>Send me a message!</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+  <div class="padding32 margin16">
+    <div class="floatLeft side container">
      <iframe width="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=9&center=32.7157%2C-117.1611&key=AIzaSyB3saU4dGAne6csQIj4_qSXsg1JXgADrZA"></iframe>
     </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Diego, CA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1(805) 501-7106<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: wes.gilmour@gmail.com<br>
+      
+    <div class="floatLeft otherSide panel">
+      <div class="large marginBottom">
+        <i class="fa fa-street-view fa-fw hoverBlackText reallyBig marginRight"></i> San Diego, CA<br>
+        <i class="fa fa-phone-square fa-fw hoverBlackText reallyBig marginRight"></i> Phone: +1(805) 501-7106<br>
+        <i class="fa fa-inbox fa-fw hoverBlackText reallyBig marginRight"></i> Email: wes.gilmour@gmail.com<br>
       </div>
       
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <form action="send.php" target="_blank">
+        <div class="padding" style="margin:0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
           </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND
+        <input class="input border" type="text" placeholder="Message" required name="Message">
+        <button class="button black right margin16" type="submit">
+          <i class="fa fa-reply"></i> SEND
         </button>
       </form>
     </div>
@@ -273,47 +263,36 @@
 </div>
 
 <!-- footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="centerText black padding64 opacity opacityOff">
+  <a href="#home" class="button lightGrey"><i class="fa fa-arrow-up marginRight"></i>To the top</a>
+  <div class="reallyBig margin16">
+   <i class="fab fa-facebook-square opacityHover"></i>
+   <i class="fab fa-instagram-square opacityHover"></i>
+   <i class="fab fa-linkedin opacityHover"></i>
   </div>
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-// Change style of navbar on scroll
+// Change navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
-    var navbar = document.getElementById("theNavig");
+    var navbar = document.getElementById("navigation");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "navBar" + " otherboxShadow" + " animateTop" + " white";
     } else {
-        navbar.className = navbar.className.replace(" 
-        
-        , "");
+        navbar.className = navbar.className.replace(" otherboxShadow animateTop white", "");
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+
+// the menu on small screens when clicking the menu button
+function click() {
+    var x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" show", "");
     }
 }
 </script>
