@@ -46,7 +46,7 @@ body {
   .bgImage, .bgImage2, .bgImage3 {
     background-attachment: scroll;
     min-height: 444px;
-  }  
+  }
 
 
 /* responsive views */
@@ -198,7 +198,7 @@ body {
 
 
 /* page container */
-.container:after, 
+.container:after,
 .container:before,
 .padding:after,
 .padding:before,
