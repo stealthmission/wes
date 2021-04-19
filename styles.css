@@ -258,6 +258,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 .column {
   display: flex;
@@ -265,10 +266,7 @@ body {
   flex-basis: auto;
   flex: 1;
 }
-.center {
-  display: flex;
-  justify-content: center;
-}
+
 
 .marginRight33{
     margin-right: 33px !important;
