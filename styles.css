@@ -45,8 +45,9 @@ body {
   background-image: url("images/bgImage4.jpg");
   min-height: 444px;
 }
-/* 
+
 .wide {letter-spacing: 10px;}
+/* 
 @media only screen and (max-device-width: 1600px) {
   .bgImage, .bgImage2, .bgImage3 {
     background-attachment: scroll;
@@ -258,14 +259,20 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: auto;
   flex: 1;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
 
+.marginRight33{
+    margin-right: 33px !important;
+}
 /* left column */
 .marginRight {
     margin-right: 16px !important;

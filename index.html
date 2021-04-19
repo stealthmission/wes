@@ -10,13 +10,12 @@
 
 <!-- navigation -->
 <div class="top">
-  <div class="navBar" id="navigation">
-    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
+  <div class="navBar hideSmall" id="navigation">
+
     <a href="#home" class="barItem button">HOME</a>
     <a href="#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
     <a href="#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
@@ -25,8 +24,12 @@
 
   <!-- small navigation -->
   <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
+    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
     <a href="#about" class="barItem button" onclick="click()">ABOUT</a>
     <a href="#projects" class="barItem button" onclick="click()">PROJECTS</a>
+    <a href="#blog" class="barItem button" onclick="click()">BLOG</a>
     <a href="#contact" class="barItem button" onclick="click()">CONTACT</a>
     <a href="#" class="barItem button">SEARCH</a>
   </div>
@@ -41,7 +44,7 @@
 
 
     <!-- page container -->
-<div class="pageContent marginTop" style="max-width:1400px;">
+<div class="pageContent marginTop" style="max-width:1400px;" id="about">
 
   <!-- grid -->
   <div class="padding">
@@ -178,14 +181,14 @@
 </div>
 
 <!-- projects -->
-<div class="pageContent container padding64 " id="projects">
+<div class="pageContent container padding64" id="projects">
   <h3 class="centerText">MY WORK</h3>
   <p class="centerText"><em>Here are some of my projects</em></p><br>
 
-  <div class="centerText row padding">
-      <div class="container boxShadow marginBottom column marginRight">
+  <div class="centerText row padding center">
+      <div class="container boxShadow marginBottom column" style="margin:22px; max-width:333px;">
 			<div class="marginTop marginBottom">
-				<img src="images/whiteBike.png" style="width:100%" alt="whiteBike">
+				<img src="images/whiteBike.png" width="222" height="133" alt="whiteBike">
 			</div>
 			<div>
 				<h5>Electric Bicycle Store</h5>
@@ -195,41 +198,41 @@
 			</div>
 
 				<div >
-					<button class="button morePadding lightGrey" style="margin-top:64px">CHECK IT OUT</button>
+					<button class="button morePadding lightGrey marginBottom">TO THE STORE</button>
 				</div>
 
 		</div>
 
-      <div class="container boxShadow marginBottom column marginRight">
+      <div class="container boxShadow marginBottom column" style="margin:22px; max-width:333px;">
 			<div class="marginTop marginBottom ">
-				<img src="images/rede36m3.jpg" style="width:100%" alt="rede36m3">
+				<img src="images/rede36m3.jpg" width="222" height="133" alt="rede36m3">
 			</div>
 			<div>
 				<h5>Auto International</h5>
 			</div>
 			<div >
-				<p>My first eCommerce site I have built from the ground up.</p>
+				<p>My first eCommerce site I have built using WordPress and WooCommerce.</p>
 			</div>
 
 				<div >
-					<button class="button morePadding lightGrey" style="margin-top:64px">CHECK IT OUT</button>
+					<button class="button morePadding lightGrey marginBottom" onclick=" window.open('http://dev-auto-international.pantheonsite.io/','_blank')">CHECK IT OUT</button>
 				</div>
 
 		</div>
-  </div>
+      </div>
 
 </div>
 
 <!-- bgImage3 and blog -->
-<div class="bgImage4 imageContainer opacity">
+<div class="bgImage4 imageContainer opacity" id="blog">
   <div class="middle">
      <span class="xxlargeFont whiteishText wide">BLOG</span>
   </div>
 </div>    
     <!-- blog -->
-    <div id="Blog">
+    <div id="Blog" style="padding:5px;" class="row">
 
-		<div id="Featured_Post" class="container boxShadow ">
+		<div id="Featured_Post" class="container boxShadow row">
 				<div>
 					<h3>FEATURED POST</h3>
 				</div>
@@ -251,7 +254,7 @@
 			</div>
 		</div>
         
-		<div class="container otherboxShadow half">
+		<div class="container otherboxShadow column">
             <div>
             <img src="images/yellowstoneRiver.jpg" style="width:88%" alt="yellowstoneRiver">
 			</div>
@@ -265,7 +268,7 @@
 				<p>continue reading...</p>
 			</div>
         </div>
-        <div class="container otherboxShadow half">
+        <div class="container otherboxShadow column">
             <div>
             <img src="images/tyres.jpg" style="width:88%" alt="tyres">
 			</div>
@@ -279,11 +282,11 @@
 				<p>continue reading...</p>
 			</div>
         </div>
-
-                <div >
-					<button class="button morePadding lightGrey" style="margin-top:64px">TO MORE POSTS</button>
-				</div>
 	</div>
+                <div class="row">
+					<button class="button morePadding lightGrey marginTop marginBottom">TO MORE POSTS</button>
+				</div>
+
         <!-- end blog -->
 
 
