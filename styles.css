@@ -23,14 +23,14 @@ body {
 }
 
 /* background images */
-.bgImage, .bgImage2, .bgImage3 {
+.bgImage, .bgImage2, .bgImage3, .bgImage4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bgImage {
-  background-image: url("images/bgImage.jpg");;
+  background-image: url("images/indianHeads.jpg");;
   min-height: 100%;
 }
 .bgImage2 {
@@ -41,13 +41,18 @@ body {
   background-image: url("images/bgImage3.jpg");
   min-height: 444px;
 }
+.bgImage4 {
+  background-image: url("images/bgImage4.jpg");
+  min-height: 444px;
+}
+/* 
 .wide {letter-spacing: 10px;}
 @media only screen and (max-device-width: 1600px) {
   .bgImage, .bgImage2, .bgImage3 {
     background-attachment: scroll;
     min-height: 444px;
-  }
-
+  }  
+*/
 
 /* responsive views */
 }
@@ -198,7 +203,7 @@ body {
 
 
 /* page container */
-.container:after,
+.container:after, 
 .container:before,
 .padding:after,
 .padding:before,
@@ -246,6 +251,19 @@ body {
 }
 .container {
     padding: 0.01em 16px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 /* left column */
