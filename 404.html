@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Whoops 404</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div id="cat" style="position: absolute;">
+<img src="images/pouncing-kitty_large.png" style=" width:  77px;"alt="kittenPouncing">
+</div>
+<div>
+<img src="images/catTree2.jpg" style="width: 188px; "alt="catTreeDeadMice">   
+    <h1>The cat is finding all these mice but we can't find your page...</h1>
+</div>
+            <div class="row">
+            <button class="button morePadding lightGrey marginTop marginBottom" onclick="">GO HOME</button>
+        </div>
+<script>
+$(document).mousemove(function(mouse){
+
+$("#cat").stop().animate({left:mouse.pageX, top:mouse.pageY});
+
+});
+</script>
+
+</body>
+</html>
