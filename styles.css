@@ -258,7 +258,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center !important;
+  justify-content: center;
 }
 .column {
   display: flex;
@@ -266,6 +266,17 @@ body {
   flex-basis: auto;
   flex: 1;
 }
+
+.stack{
+    border-style: solid; 
+    padding: 4px 16px 4px 16px; 
+    position: absolute;  
+    z-index: 2; 
+    background-color: white;
+    margin: 0px;
+    left: 0%;
+}
+
 
 
 .marginRight33{
