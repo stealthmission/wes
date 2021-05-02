@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-<title>Whoops 404</title>
+<title>Wes Gilmour - TwilioQuest Solutions</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="icon" href="images/logo2.png">
 <body>
+
+<!-- navigation -->
+<div class="top">
+  <div class="navBar hideSmall" id="navigation">
+
+    <a href="#home" class="barItem button">HOME</a>
+    <a href="#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
+    <a href="#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- small navigation -->
+  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
+    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#about" class="barItem button" onclick="click()">ABOUT</a>
+    <a href="#projects" class="barItem button" onclick="click()">PROJECTS</a>
+    <a href="#blog" class="barItem button" onclick="click()">BLOG</a>
+    <a href="#contact" class="barItem button" onclick="click()">CONTACT</a>
+    <a href="#" class="barItem button">SEARCH</a>
+  </div>
+</div>
+
+
+
+
+    <!-- page container -->
+<div class="pageContent marginTop" style="max-width:1400px;" id="about">
+
+  <!-- grid -->
+  <div class="padding">
+    
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -31,6 +67,40 @@ $(document).mousemove(function(mouse){
 $("#cat").stop().animate({left:mouse.pageX, top:mouse.pageY});
 
 });
+</script>
+
+  
+    
+  <!-- grid -->
+  </div>
+  
+  <!-- container -->
+</div>
+
+ 
+<script>
+
+// Change navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("navigation");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "navBar" + " otherboxShadow" + " animateTop" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" otherboxShadow animateTop white", "");
+    }
+}
+
+
+// the menu on small screens when clicking the menu button
+function click() {
+    var x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
 </script>
 
 </body>
