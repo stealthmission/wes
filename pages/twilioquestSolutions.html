@@ -41,7 +41,7 @@
 
 
     <!-- page container -->
-<div class="pageContent marginTop" style="max-width:1400px; );">
+<div id="home" class="pageContent marginTop" style="max-width:1400px; );">
 
   <!-- grid -->
   <div class="padding">
@@ -133,46 +133,279 @@ if (lifeStatus == 0 && drynessLevel > 10) {
   console.log('WATER');
 }</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>fizzBuzz</p>
+        <pre><code class="language-javascript">const numberInput = Number(process.argv[2]);
+let output = '';
+
+
+
+
+if (numberInput % 3 == 0 && numberInput % 5 == 0) {
+  output += 'JavaScript';
+}
+else if (numberInput % 3 == 0) {
+  output += 'Java';
+}
+
+else if (numberInput % 5 == 0) {
+  output += 'Script';
+}
+
+else {
+  output = String(numberInput);
+}
+
+
+
+console.log(output);</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>sortOrder</p>
+        <pre><code class="language-javascript">//This script will take two command line arguments - a pair of strings that should be compared to see which one comes first alphabetically (letter casing is not important).
+
+// It must take two command line arguments, which you must compare
+
+//two command line arguments
+const firstValue = process.argv[2];
+const secondValue = process.argv[3];
+const firstValueLower = firstValue.toLowerCase();
+const secondValueLower = secondValue.toLowerCase();
+//if statements here
+
+//Your script should determine if the first string is before, after, or in the same position (equal) to the second string, alphabetically. For each case, you should print out a number with console.log as described below.
+if (secondValueLower > firstValueLower){console.log(-1);}
+//When the first argument is earlier in the alphabet than the second, your script should print -1.
+else if (firstValueLower == secondValueLower){console.log(0);}
+//When the first argument is the same as the second, your script should print 0.
+else if (firstValueLower > secondValueLower){console.log(1);}
+//When the first argument is later in the alphabet than the second, your function should print 1.</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freighterInventory</p>
+        <pre><code class="language-javascript">let inventory = ["Ducktypium Ore", "Uranium Rod", "Ruthenium Isotopes", "Concave Lens", "Refraction Panel"];</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>addFirstToLast</p>
+        <pre><code class="language-javascript">// specifically, there is a function that takes an array of strings as an argument, and returns a new string which is the result of sticking the first and last items of the array together.
+
+function addFirstToLast(inputArray) {
+  let firstAndLast = '';
+
+  // Only execute this code if the array has items in it
+  if (inputArray.length > 0) {
+    // Change the line below! What should it be?
+    firstAndLast = inputArray[0] + inputArray.pop();
+  }
+
+  return firstAndLast;
+}
+
+// The lines of code below will test your function when you run it from the
+// command line with Node.js
+console.log(addFirstToLast(['first', 'second', 'third']));
+console.log(addFirstToLast(['golden', 'terrier']));
+console.log(addFirstToLast(['cheerio']));
+console.log(addFirstToLast([]));</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>getFirstAmountSorted</p>
+        <pre><code class="language-javascript">function getFirstAmountSorted(inputArray, numberOfItems) {
+  // Step 1: sort inputArray alphabetically
+    const newArray = inputArray.sort();
+    
+    
+  // Step 2: create an array which contains the first N items of the sorted
+  //         array - the number of items is provided in the numberOfItems 
+  //         variable
+    
+  // Step 3: return the new array you created at step 2
+    return(newArray.slice(numberOfItems[0], numberOfItems.length));
+}
+
+// The lines of code below test your function when you execute your code in
+// the terminal - they are not required for your function to work
+// const newArray = getFirstAmountSorted(['cat', 'apple', 'bat'], 2);
+// console.log(newArray); // << should print out ['apple', 'bat']</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>construction</p>
+        <pre><code class="language-javascript">function construct(name) {     
+    
+ let person = {};
+  person.name = name;
+  person.material = "human";	 
+  person.assemble = true; 
+  person.duration = 1000; 
+  return person;
+    
+    
+  
+
+}
+    ;</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freightScanner</p>
+        <pre><code class="language-javascript">// This function should take a single argument - an array of strings. Your scan function must loop through all the strings in this array, and examine each one using boolean logic.
+//const freightItems = Number(process.argv[2]);
+// If a string in the array is equal to the value contraband, then you should increment a number which would represent the number of times you have found contraband. Once you have looped through the entire array, return the number of times you found the string contraband within the array.
+
+
+function scan(freightItems) {
+  let contrabandCount = 0;
+
+
+  //Replace this comment with your code.
+
+  //Your code needs to:
+  //- Loop through every item in the freightItems array
+    freightItems.forEach(function(element) {
+
+        
+     // - if the item is equal to "contraband", increase contrabandCount by one
+  
+    if (element == 'contraband') {
+        contrabandCount++
+        }
+})
+    
+  return contrabandCount;
+}
+
+// The following lines of code are not required for the solution, but can be
+// used by you to test your solution.
+//const numItems = scan(['dog', 'contraband', 'cat', 'zippers', 'contraband']);
+//console.log('Number of "contraband": ' + numItems); // should be 2</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freightScanner2</p>
+        <pre><code class="language-javascript">
+// This function should take a single argument - an array of strings. Your scan function must loop through all the strings in this array, and examine each one using boolean logic.
+//const numberInput = Number(process.argv[2]);
+
+// If a string in the input array is equal to the value contraband, add the index of that item to an output array. When you have finished scanning the entire input array, return the output array, which should contain all the indexes of suspicious items in the array.
+
+function scan (){
+    
+}
+
+function scan(freightItems) {
+  let contrabandIndexes = [];
+    // for each turn of the loop scan the array and find the word contraband
+    // if word contraband is detected then output the position of it it the log 
+  //Replace this comment with your code.
+  //Your code needs to:
+  //- Loop through every item in the freightItems array
+    freightItems.forEach(function(element, index){
+    
+  // - if the item is equal to "contraband", add the current index of the item to contrabandIndexes - hint: use the array "push()" method
+        if(element == "contraband"){
+    
+            contrabandIndexes.push(index);
+        }
+        
+   })
+
+  return contrabandIndexes;
+}
+
+// The following lines of code are not required for the solution, but can be
+// used by you to test your solution.
+const indexes = scan(['dog', 'contraband', 'cat', 'zippers', 'contraband']);
+console.log('Contraband Indexes: ' + indexes); // should be [1, 4]</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freightFilter</p>
+        <pre><code class="language-javascript">//Create a file called freightFilter.js in your code folder. Inside this file, create a JavaScript function called scanAndFilter.
+
+//This function should take two arguments - an array of strings, and a string of text to filter out from that array. Your scanAndFilter function should use the array filter function for this purpose. Your function must then return the filtered array.
+
+function scanAndFilter(freightItems, forbiddenString) {
+  // This is an array variable you can override with your filtered array
+  let filteredItems = [];
+
+  /*
+  Replace this comment with your code.
+  Use the array filter() function to replace filteredItems with a new array of
+  strings that don't include the value of forbiddenString
+  */
+  return filteredItems = freightItems.filter(item => (forbiddenString !== item));
+
+    
+
+}
+
+// The following lines of code are not required for the solution, but can be
+// used by you to test your solution.
+//const filtered = scanAndFilter(
+//  ['dog', 'ray gun', 'cat', 'zippers', 'ray gun'],
+ // 'ray gun'
+//);
+//console.log('Filtered Items');
+//console.log(filtered); // should be ['dog', 'cat', 'zippers']</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freightMutator</p>
+        <pre><code class="language-javascript">function mutate (freightItems){
+    
+    let mutatedItems = [];
+
+  /*
+  Replace this comment with your code.
+  Use the array map() function to replace mutatedItems with a new array of
+  strings from the input array that have been converted to ALL CAPS
+  */
+
+  return mutatedItems = freightItems.map(item => item.toUpperCase());
+    
+}</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>freightMass</p>
+        <pre><code class="language-javascript">function calculateMass (freightItems){
+
+  /*
+  Replace this comment with your code.
+  Use the array reduce() function to replace the value of totalMass.
+  Note that it is possible to use forEach or other loop types to do this, but
+  using "reduce" is probably the most elegant solution!
+  */
+
+  return freightItems.reduce((total, current) => total + current.length, 0); 
+    
+}</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>laserPower</p>
+        <pre><code class="language-javascript">function calculatePower(powerSettings) {
+  let multiplyTwo = powerSettings.map(item => item * 2 );
+  return totalPower = multiplyTwo.reduce((sum, item) => sum + item, 0);
+
+ 
+}
+
+// The following lines of code are not required for the solution, but can be
+// used by you to test your solution.
+const laserPower = calculatePower([1, 3, 8]);
+console.log('Required laser power is ' + laserPower); // should be 24</code></pre><br>
       
-      <p></p>
-        <pre><code class="language-javascript"></code></pre><br>
+      <p>classes</p>
+        <pre><code class="language-javascript">class Materializer {
+  constructor(target) {
+    // your code here
+      this.target = target
+      this.activated = false
+  }
+      activate(){this.activated  = true}
       
-      <p></p>
+      materialize(){
+          if (this.activated === true){return this.target}
+          
+  }
+
+  // your code here
+}
+
+// The following lines of code are not required for the solution, but can be
+// used by you to test your solution.
+/*const m = new Materializer('Kevin');
+console.log(m.activated); // would print "false"
+
+m.activate();
+console.log(m.activated); // would print "true"
+
+console.log(m.materialize()); // would print "Kevin"*/</code></pre><br>
+      
+ <!--   <p></p>
         <pre><code class="language-javascript"></code></pre><br>
       
       <p></p>
@@ -203,7 +436,7 @@ if (lifeStatus == 0 && drynessLevel > 10) {
         <pre><code class="language-javascript"></code></pre><br>
       
 
-                
+  -->                  
       
       
       
