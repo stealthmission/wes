@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Wes Gilmour - TwilioQuest Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/logo2.png">
+	<link rel="stylesheet" type="text/css" href="prism.css">
+</head>
+<body>
+	<script src="prism.js"></script>
+<!-- navigation -->
+    <div style="background-image: url('../images/nightSky.jpg'">
+<div class="top">
+  <div class="navBar hideSmall" id="navigation">
+
+    <a href="#home" class="barItem button">HOME</a>
+    <a href="#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
+    <a href="#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- small navigation -->
+  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
+    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#about" class="barItem button" onclick="click()">ABOUT</a>
+    <a href="#projects" class="barItem button" onclick="click()">PROJECTS</a>
+    <a href="#blog" class="barItem button" onclick="click()">BLOG</a>
+    <a href="#contact" class="barItem button" onclick="click()">CONTACT</a>
+    <a href="#" class="barItem button">SEARCH</a>
+  </div>
+</div>
+
+
+    <!-- page container -->
+<div class="pageContent marginTop" style="max-width:1400px; );">
+
+  <!-- grid -->
+  <div class="padding">
+      
+      
+        <h1>This page contains my solutions to TwilioQuest JavaScript challenges!</h1><br>
+        <h2>Download the game at the</h2>
+        <a href="https://www.twilio.com/quest/learn/javascript"> Top-Secret JavaScript Test Lab</a>
+      <br>
+      
+        <p>sayPlease</p>
+        <pre><code class="language-javascript">console.log('Glen, will you please open the barrier?');</code></pre><br>
+      
+        <p>laserConfiguration</p>
+        <pre><code class="language-javascript">var laserStatus = 'OFF';</code></pre><br>
+      
+        <p>chestConfiguration</p>
+        <pre><code class="language-javascript">var verifiedUser = true;
+var accessLevel = 7;
+var favoriteRobot = 'Cedric';</code></pre><br>
+      
+        <p>divideByTwo</p>
+        <pre><code class="language-javascript">// The line of code below reads in the value of the argument passed in after
+// the name of your script
+const argumentValue = process.argv[2];
+
+// This line of code converts the argument to a numeric value
+const numberValue = Number(argumentValue);
+
+// This line of code divides the input number by two, and stores the result in
+// a variable named "result"
+const result = numberValue / 2;
+
+// You need to finish the line of code below! How would you print out the
+// result to the terminal window without hard coding the number 42?
+console.log(result);</code></pre><br>
+      
+        <p>laserFunction</p>
+        <pre><code class="language-javascript">function getLaserSetting() {
+  return "OFF";
+}</code></pre><br>
+      
+      <p>politeLasers</p>
+        <pre><code class="language-javascript">function getLaserSetting(n) {
+if (n==="please"){ return "OFF";}
+    else {return "ON";}
+
+}</code></pre><br>
+      
+      
+      <p>northBridgeControl</p>
+        <pre><code class="language-javascript">const argumentValue = process.argv[2];
+
+// Modify the if statement below to execute if and only if "argumentValue" is
+// equal to the string "EXTEND"
+if (argumentValue === "EXTEND") {
+  console.log('Extending bridge!');</code>
+}</pre><br>
+      
+      <p>treeLifeDetector</p>
+        <pre><code class="language-javascript">// These lines of code take in the argument from the command line
+const argumentValue = process.argv[2];
+const treeLifeStatus = Number(argumentValue);
+
+// Write your if statement below here!
+if (treeLifeStatus === 0) {
+  console.log('alive');
+} else {
+  console.log('other');
+}</code></pre><br>
+      
+      <p>enhancedLifeDetector</p>
+        <pre><code class="language-javascript">// These lines of code take in the argument from the command line
+const argumentValue = process.argv[2];
+const treeLifeStatus = Number(argumentValue);
+
+// Write your if statement below here!
+if (treeLifeStatus == 0){console.log('alive');}
+if (treeLifeStatus == 1){console.log('flowering');}
+if (treeLifeStatus == 2){console.log('shedding');}
+if (treeLifeStatus == 3){console.log('other');}</code></pre><br>
+      
+      <p>shouldWater</p>
+        <pre><code class="language-javascript">const lifeStatus = Number(process.argv[2]);
+const drynessLevel = Number(process.argv[3]);
+
+// Your if statement goes below...
+if (lifeStatus == 0 && drynessLevel > 10) {
+  console.log('WATER');
+}</code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+      <p></p>
+        <pre><code class="language-javascript"></code></pre><br>
+      
+
+                
+      
+      
+      
+  <!-- grid -->
+  </div>
+  
+  <!-- container -->
+</div>
+</div>
+
+
+<!-- footer -->
+<footer class="centerText black padding64 opacity opacityOff">
+  <a href="#home" class="button lightGrey"><i class="fa fa-arrow-up marginRight"></i>To the top</a>
+  <div class="reallyBig margin16">
+   <i class="fab fa-facebook-square opacityHover"></i>
+   <i class="fab fa-instagram-square opacityHover"></i>
+   <i class="fab fa-linkedin opacityHover"></i>
+  </div>
+</footer>
+ 
+<script>
+
+// Change navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("navigation");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "navBar" + " otherboxShadow" + " animateTop" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" otherboxShadow animateTop white", "");
+    }
+}
+
+
+// the menu on small screens when clicking the menu button
+function click() {
+    var x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
