@@ -4,7 +4,9 @@ body, html {
   color: #777;
   line-height: 1.8;
 }
-
+html * {
+    font-family: 'Titillium Web', sans-serif;
+}
 html {
     box-sizing: border-box;
 }
@@ -30,21 +32,10 @@ body {
   background-size: cover;
 }
 .bgImage {
-  background-image: url("images/indianHeads.jpg");;
-  min-height: 100%;
+ background-image: url("images/bgImage2.jpg");
+ height: 33%;
 }
-.bgImage2 {
-  background-image: url("images/bgImage2.jpg");
-  min-height: 444px;
-}
-.bgImage3 {
-  background-image: url("images/bgImage3.jpg");
-  min-height: 444px;
-}
-.bgImage4 {
-  background-image: url("images/bgImage4.jpg");
-  min-height: 444px;
-}
+
 
 .wide {letter-spacing: 10px;}
 /* 
@@ -115,16 +106,16 @@ body {
     white-space: nowrap;
 }
 .button:hover {
-    color: #000 !important;
+    color: #090C02 !important;
     background-color: #ccc !important;
 }
 .blackHover:hover {
-    color: #fff !important;
-    background-color: #000 !important;
+    color: #F2F4FF !important;
+    background-color: #090C02 !important;
 }
 .hoverRed:hover {
     color: #fff !important;
-    background-color: #f44336 !important;
+    background-color: #A72608 !important;
 }
 .animateTop {
     position: relative;
@@ -137,36 +128,58 @@ body {
 
 /* color and things similar */
 .white {
-    color: #000 !important;
+    color: #090C02 !important;
     background-color: #fff !important;
 }
 .whiteishText {
     color: #E6E2B6 !important;
 }
 .black {
-    color: #fff !important;
-    background-color: #000 !important;
+    color: #F2F4FF !important;
+    background-color: #090C02 !important;
 }
 .blackText,
 .hoverBlackText:hover {
-    color: #000 !important;
+    color: #090C02 !important;
 }
 .lightGrey {
-    color: #000 !important;
+    color: #090C02 !important;
     background-color: #f1f1f1 !important;
 }
 .greyText {
     color: #757575 !important;
 }
-.greyPurpleText {
-    color: #CFC7D0 !important;
+.rofousText {
+    color: #A72608 !important;
+}
+.blackChocolateText {
+    color: #090C02 !important;
+}
+
+.nickelText {
+    color: #6C756B !important;
+}
+.pewterBlueText {
+    color: #93ACB5 !important;
+}
+.babyBlueText {
+    color: #96C5F7 !important;
+}
+.orangeYellowText {
+    color: #FCD581 !important;
+}
+.blueEyesText {
+    color: #A9D3FF !important;
+}
+.ghostWhiteText {
+    color: #F2F4FF !important;
 }
 .seafoamText {
-    color: #48998A !important;
+    color: #93ACB5 !important;
 }
 .otherGreen {
-    color: #E6E2B6 !important;
-    background-color: #85B79C !important;
+    color: #F2F4FF !important;
+    background-color: #A72608 !important;
 }
 .right {
     float: right !important;
@@ -225,12 +238,12 @@ body {
 }
 
 .pageContent{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     max-width: 980px;
 }
 .marginTop {
-    margin-top: 16px !important;
+    margin-top: 16px;
 }
 @media (min-width: 601px) {
     .third {
@@ -275,6 +288,9 @@ body {
     background-color: white;
     margin: 0px;
     left: 0%;
+}
+.justifySpaceBetween{
+    justify-content: space-between;
 }
 
 
@@ -370,3 +386,16 @@ body {
 .opacityHover:hover {
     opacity: 0.6;
 }
+
+
+/* hide display div 
+#display1 {
+   display: none;
+}
+#display2 {
+   display: none;
+}
+#display3 {
+   display: none;
+}
+*/
