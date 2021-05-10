@@ -1,8 +1,46 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>eBike Gallery</title>
-   </head>
+<head>    
+    <title>Wes Gilmour - eBike Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,900;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/logo2.png">
+	<link rel="stylesheet" type="text/css" href="prism.css">
+</head>
+<body>
+	<script src="prism.js"></script>
+<!-- navigation -->
+
+<div class="top">
+  <div class="navBar hideSmall" id="navigation">
+
+    <a href="../index.html/#home" class="barItem button">HOME</a>
+    <a href="../index.html/#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="../index.html/#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="../index.html/#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
+    <a href="../index.html/#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- small navigation -->
+  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
+    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../index.html/#about" class="barItem button" onclick="click()">ABOUT</a>
+    <a href="../index.html/#projects" class="barItem button" onclick="click()">PROJECTS</a>
+    <a href="../index.html/#blog" class="barItem button" onclick="click()">BLOG</a>
+    <a href="../index.html/#contact" class="barItem button" onclick="click()">CONTACT</a>
+    <a href="#" class="barItem button">SEARCH</a>
+  </div>
+</div>
+
     <style>
 
 * {
@@ -10,9 +48,7 @@
   padding: 0;
 }
 
-body{
-  font-family: sans-serif;
-}
+
 
 ul {
   display: flex;
@@ -70,23 +106,24 @@ img {
 }
     </style>
     
- <body style="background-color:#0e0c0a;">
+ <body>
+     <div style="background-color: #93ACB5">
       <h1 style="color:white; text-align: center;">eBikes</h1>
       <p style="color:white; text-align: center;">Here are some electric bikes I have put together.</p>
 <ul>
     
 
   <li><a href="../images/toPost/post1.jpg" data-fancybox data-caption="">
-    <img src="../images/toPost/post1.jpg" alt="" loading="lazy">
+    <img src="../images/toPost/post1.jpg" alt="" >
   </a></li>
   <li><a href="../images/toPost/post2.jpg" data-fancybox data-caption="">
-    <img src="../images/toPost/post2.jpg" alt="" loading="lazy">
+    <img src="../images/toPost/post2.jpg" alt="" >
   </a></li>
 
 
 
   <li><a href="../images/toPost/post6.jpg" data-fancybox data-caption="">
-    <img src="../images/toPost/post6.jpg" alt="" loading="lazy">
+    <img src="../images/toPost/post6.jpg" alt="" >
   </a></li>
     
       <li><a href="../images/toPost/mk1.jpg" data-fancybox data-caption="">
@@ -185,7 +222,7 @@ img {
   
   <li></li>
 </ul>
-
+</div>
        
        
    </body>
