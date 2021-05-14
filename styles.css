@@ -295,6 +295,9 @@ noMargin {
 .justifySpaceBetween{
     justify-content: space-between;
 }
+.justifySpaceEvenly{
+    justify-content: space-evenly;
+}
 
 
 
