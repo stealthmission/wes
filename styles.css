@@ -47,8 +47,8 @@ body {
 */
 
 /* responsive views */
-}
-@media (max-width: 600px) {
+
+@media (max-width: 703px) {
     .hideSmall {
         display: none !important;
     }
@@ -58,7 +58,7 @@ body {
         display: none !important;
     }
 }
-@media (max-width: 992px) and (min-width: 601px) {
+@media (max-width: 992px) and (min-width: 704px) {
     .hideMedium {
         display: none !important;
     }
@@ -124,7 +124,9 @@ body {
 .show {
     display: block !important;
 }
-
+.hide {
+    display: none ;
+}
 
 /* color and things similar */
 .white {

@@ -14,36 +14,40 @@
 <!-- navigation -->
 
 <div class="top">
-  <div class="navBar hideSmall" id="navigation">
+  <div class="navBar " id="navigation">
 
-    <a href="#home" class="barItem button hoverRed">HOME</a>
-    <a href="#about" class="barItem button hideSmall hoverRed"><i class="fa fa-user"></i> ABOUT</a>
+    <a class="barItem button hoverRed hideMedium hideLarge right" href="javascript:void(0);" onclick="toggleFunction()" title="activate smolNav">
+        
+      <i class="fa fa-bars"></i>
+    </a>
+      
+
+    <a href="#home" class="barItem button hideSmall hoverRed"><i class="fa fa-user"></i> HOME</a>
     <a href="#projects" class="barItem button hideSmall hoverRed"><i class="fa fa-th"></i> PROJECTS</a>
     <a href="#blog" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> BLOG</a>
     <a href="#contact" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
     </a>
-    <a href="#" class="barItem button hideSmall right hoverRed">
+    <a href="#" class="barItem button right hoverRed">
    <i class="fab fa-facebook-square opacityHover"></i>
     </a>
-          <a href="#" class="barItem button hideSmall right hoverRed">
+          <a href="#" class="barItem button right hoverRed">
          <i class="fab fa-instagram-square opacityHover"></i>
                   </a>
-                  <a href="#" class="barItem button hideSmall right hoverRed">
+                  <a href="#" class="barItem button right hoverRed">
    <i class="fab fa-linkedin opacityHover"></i>
                           </a>
   </div>
 
   <!-- small navigation -->
-  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
-    <a class="barItem button hoverRed hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#about" class="barItem button hoverRed" onclick="click()">ABOUT</a>
-    <a href="#projects" class="barItem button hoverRed" onclick="click()">PROJECTS</a>
-    <a href="#blog" class="barItem button hoverRed" onclick="click()">BLOG</a>
-    <a href="#contact" class="barItem button hoverRed" onclick="click()">CONTACT</a>
+  <div id="smolNav" class="smolNavBlock white hide hideLarge hideMedium">
+
+
+    <a href="#home" class="barItem button hoverRed" onclick="toggleFunction()">HOME</a>
+    <a href="#projects" class="barItem button hoverRed" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#blog" class="barItem button hoverRed" onclick="toggleFunction()">BLOG</a>
+    <a href="#contact" class="barItem button hoverRed" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="barItem button hoverRed">SEARCH</a>
   </div>
 </div>
@@ -348,10 +352,10 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 			</div>
             <div class="padding">
 			<div>
-				<h2>Toy mouse squeak roll over chew master's slippers so gimme attention</h2>
+				<h2>Documentation of building this site</h2>
 			</div>
 			<div>
-				<p>Climb into cupboard and lick the salt off rice cakes my water bowl is clean and freshly replenished, so i'll drink from the toilet for woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops </p>
+				<p>Take a look at the steps I took to create my profolio page. I will explain each part of the process. Sitemaps, wireframes, mockups, templates, testing, SEO and more! </p>
 			</div>
 				<div class="centerText">
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">CONTINUE READING...</button>
@@ -453,21 +457,10 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 
 <script>
 
-// Change navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("navigation");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "navBar" + " otherboxShadow" + " animateTop" + " white";
-    } else {
-        navbar.className = navbar.className.replace(" otherboxShadow animateTop white", "");
-    }
-}
-
 
 // the menu on small screens when clicking the menu button
-function click() {
-    var x = document.getElementById("smolNav");
+function toggleFunction() {
+    let x = document.getElementById("smolNav");
     if (x.className.indexOf("show") == -1) {
         x.className += " show";
     } else {
