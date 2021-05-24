@@ -16,27 +16,40 @@
 <!-- navigation -->
 
 <div class="top">
-  <div class="navBar hideSmall" id="navigation">
+  <div class="navBar" id="navigation">
 
-    <a href="../index.html/#home" class="barItem button">HOME</a>
-    <a href="../index.html/#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="../index.html/#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
-    <a href="../index.html/#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
-    <a href="../index.html/#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
+          <a class="barItem button hoverRed hideMedium hideLarge right" href="javascript:void(0);" onclick="toggleFunction()" title="activate smolNav">
+        
+      <i class="fa fa-bars"></i>
+    </a>
+      
+    <a href="../index.html#home" class="barItem button hideSmall">HOME</a>
+    <a href="../index.html#about" class="barItem button hideSmall"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="../index.html#projects" class="barItem button hideSmall"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button hideSmall"><i class="fa fa-envelope"></i> BLOG</a>
+    <a href="../index.html#contact" class="barItem button hideSmall"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
     </a>
+      <a href="#" class="barItem button right hoverRed">
+   <i class="fab fa-facebook-square opacityHover"></i>
+    </a>
+          <a href="#" class="barItem button right hoverRed">
+         <i class="fab fa-instagram-square opacityHover"></i>
+                  </a>
+                  <a href="#" class="barItem button right hoverRed">
+   <i class="fab fa-linkedin opacityHover"></i>
+                          </a>
+      
   </div>
 
   <!-- small navigation -->
-  <div id="smolNav" class="smolNavBlock white hideLarge hideMedium">
-    <a class="barItem button blackHover hideMedium hideLarge right" href="javascript:void(0);" onclick="click()" title="Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="../index.html/#about" class="barItem button" onclick="click()">ABOUT</a>
-    <a href="../index.html/#projects" class="barItem button" onclick="click()">PROJECTS</a>
-    <a href="../index.html/#blog" class="barItem button" onclick="click()">BLOG</a>
-    <a href="../index.html/#contact" class="barItem button" onclick="click()">CONTACT</a>
+  <div id="smolNav" class="smolNavBlock white hide hideLarge hideMedium">
+
+    <a href="../index.html#about" class="barItem button" onclick="toggleFunction()">HOME</a>
+    <a href="../index.html#projects" class="barItem button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button" onclick="toggleFunction()">BLOG</a>
+    <a href="../index.html#contact" class="barItem button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="barItem button">SEARCH</a>
   </div>
 </div>
@@ -223,7 +236,29 @@ img {
   <li></li>
 </ul>
 </div>
-       
-       
+     
+     
+     <!-- footer -->
+<footer class="centerText padding64  opacityOff" >
+  <a href="#home" class="button black round hoverRed"><i class="fa fa-arrow-up marginRight"></i>To the top</a>
+  <div class="reallyBig margin16">
+   <i class="fab fa-facebook-square opacityHover"></i>
+   <i class="fab fa-instagram-square opacityHover"></i>
+   <i class="fab fa-linkedin opacityHover"></i>
+  </div>
+</footer>
+     
+     
+     <script>
+       // the menu on small screens when clicking the menu button
+function toggleFunction() {
+    let x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+       </script>
    </body>
 </html>
