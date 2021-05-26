@@ -19,18 +19,22 @@
     </a>
     <a href="../index.html#home" class="barItem button hideSmall hoverRed"> HOME</a>
     <a href="../index.html#projects" class="barItem button hideSmall hoverRed"><i class="fa fa-th"></i> PROJECTS</a>
-    <a href="../index.html#blog" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> BLOG</a>
+    <a href="../index.html#blog" class="barItem button hideSmall hoverRed"><i class="fab fa-microblog"></i> BLOG</a>
     <a href="../index.html#contact" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
     </a>
         <!-- social -->
+      
+        <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="barItem button right hoverRed">
+   <i class="fab fa-linkedin opacityHover"></i>
+    </a>
       <a href="https://codepen.io/stealthmission" target="_blank" class="barItem button right hoverRed">
          <i class="fab fa-codepen opacityHover"></i>
                   </a>
                   <a href="https://github.com/stealthmission" target="_blank" class="barItem button right hoverRed">
    <i class="fab fa-github opacityHover"></i>
-                          </a>
+                </a>
   </div>
 
   <!-- small navigation -->

@@ -29,10 +29,11 @@
     <a href="#" class="barItem button hideSmall right hoverRed">
       <i class="fa fa-search"></i>
     </a>
-    <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="barItem button right hoverRed">
+  
+        <!-- social -->
+  <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="barItem button right hoverRed">
    <i class="fab fa-linkedin opacityHover"></i>
     </a>
-        <!-- social -->
       <a href="https://codepen.io/stealthmission" target="_blank" class="barItem button right hoverRed">
          <i class="fab fa-codepen opacityHover"></i>
                   </a>
@@ -331,30 +332,40 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 				</div>
             </div>
         </div>
+     
       <!-- onClick display this div -->
+     
+     
         <div id="id3" class="modal">
      <div style="max-width: 696px; background-color: #fff; margin:auto; padding: 0px 20px 0px 20px;">
          <span onclick="document.getElementById('id3').style.display='none'"  class="close">&times;</span>
        <div class="row justifySpaceEvenly" style="padding-top: 22px;">
          <img src="images/tSolutions.gif" alt="solutions demo" width="333">
-        <div class="column">
+       </div>           
+           
+        <div id="hiddenDiv1" class="row" style="display: none;">
+           <p class="codepen" data-height="333" data-theme-id="dark" data-default-tab="html" data-user="stealthmission" data-slug-hash="YzZVKaL" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TwilioQuest JavaScript Solutions">
+  <span>See the Pen <a href="https://codepen.io/stealthmission/pen/YzZVKaL">
+  TwilioQuest JavaScript Solutions</a> by stealthmission (<a href="https://codepen.io/stealthmission">@stealthmission</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+           
+           
+        <div class="row">
             <div class="centerText ">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
-				</div>
-                <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('pages/twilioquestSolutions.html','_self')">THE PAGE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHidden1()">THE CODE</button>
 				</div>
         </div>
            
-           <p class="codepen" data-height="423" data-theme-id="dark" data-default-tab="html,result" data-user="stealthmission" data-slug-hash="YzZVKaL" data-preview="true" style="height: 423px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TwilioQuest JavaScript Solutions">
-               <span>See the Pen <a href="https://codepen.io/stealthmission/pen/YzZVKaL">
-                   TwilioQuest JavaScript Solutions</a> by stealthmission (<a href="https://codepen.io/stealthmission">@stealthmission</a>)
-                   on <a href="https://codepen.io">CodePen</a>.</span>
-           </p>
-           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-             </div>
+
    
-         <div class="column" ><p>        Since some of the exercises were difficult for me and I could only find a limited amount of info, I decided to post my own solutions.</p></div>
+         <div class="row" ><p>        Since some of the exercises were difficult for me and I could only find a limited amount of info, I decided to post my own solutions.</p></div>
+         
+                <div class="centerText row">
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('http://wesgilmour.com/pages/twilioquestSolutions.html','_self')">THE PAGE</button>
+				</div>
 
      </div>
      </div>
@@ -377,6 +388,7 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 				</div>
             </div>
         </div>
+     
         <div id="id4" class="modal">
      <div style="max-width: 696px; background-color: #fff; margin:auto; padding: 0px 20px 0px 20px;">
          <span onclick="document.getElementById('id4').style.display='none'"  class="close">&times;</span>
@@ -385,7 +397,7 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
            </div>
          
                      <!-- onClick display this div -->
-            <div id="hiddenDiv" class="column" style="display: none;">
+            <div id="hiddenDiv" class="row" style="display: none;">
             <p class="codepen" data-height="333" data-theme-id="dark" data-default-tab="html" data-user="stealthmission" data-slug-hash="zYZdKQe" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Custom 404 Page">
   <span>See the Pen <a href="https://codepen.io/stealthmission/pen/zYZdKQe">
   Custom 404 Page</a> by stealthmission (<a href="https://codepen.io/stealthmission">@stealthmission</a>)
@@ -399,19 +411,18 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHidden()">THE CODE</button>
 				</div>
             
-
-
-            
         </div>
              
    
-         <div class="row" ><p>        A 404 page using jQuery, which is a JavaScript libary, and an attempt at some mild humor. jQuery made HTML manipulation, event handling and animation much easier to use for this project.  </p></div>
-                         <div class="centerText row">
+         <div class="row" ><p>        A 404 page using jQuery, which is a JavaScript libary, and an attempt at some humor. jQuery made HTML manipulation, event handling and animation much easier to use for this project.  </p></div>
+                <div class="centerText row">
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('http://wesgilmour.com/_blank','_self')">THE PAGE</button>
 				</div>
 
      </div>
      </div>
+     
+     
         <!-- otherWorks -->
              <div class="otherboxShadow column marginBottom white" style="margin:22px; min-width:333px; max-width:333px;">
             <div>
@@ -587,6 +598,14 @@ function toggleFunction() {
 
 function showHidden() {
   var x = document.getElementById("hiddenDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function showHidden1() {
+  var x = document.getElementById("hiddenDiv1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
