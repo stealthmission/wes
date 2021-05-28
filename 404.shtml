@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Wes Gilmour - 404!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/logo2.png">
+<body>
+
+<!-- navigation -->
+
+<div class="top">
+  <div class="navBar " id="navigation">
+      
+          <a class="barItem button hoverRed hideMedium hideLarge right" href="javascript:void(0);" onclick="toggleFunction()" title="activate smolNav">
+        
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../index.html#about" class="barItem button hideSmall hoverRed"> HOME</a>
+    <a href="../index.html#projects" class="barItem button hideSmall hoverRed"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button hideSmall hoverRed"><i class="fab fa-microblog"></i> BLOG</a>
+    <a href="../index.html#contact" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
+      <i class="fa fa-search"></i>
+    </a>
+          <!-- social -->
+  <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="barItem button right hoverRed">
+   <i class="fab fa-linkedin opacityHover"></i>
+    </a>
+      <a href="https://codepen.io/stealthmission" target="_blank" class="barItem button right hoverRed">
+         <i class="fab fa-codepen opacityHover"></i>
+                  </a>
+                  <a href="https://github.com/stealthmission" target="_blank" class="barItem button right hoverRed">
+   <i class="fab fa-github opacityHover"></i>
+                          </a>
+  </div>
+
+  <!-- small navigation -->
+  <div id="smolNav" class="smolNavBlock white hide hideLarge hideMedium">
+
+    <a href="../index.html#about" class="barItem button hoverRed" onclick="toggleFunction()">ABOUT</a>
+    <a href="../index.html#projects" class="barItem button hoverRed" onclick="toggleFunction()">PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button hoverRed" onclick="toggleFunction()">BLOG</a>
+    <a href="../index.html#contact" class="barItem button hoverRed" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="barItem button hoverRed">SEARCH</a>
+  </div>
+</div>
+
+
+
+
+
+    <!-- page container -->
+<div class="pageContent marginTop" style="max-width:1400px;" id="home">
+
+  <!-- grid -->
+  <div class="padding">
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div id="cat" style="position: absolute;">
+<img src="images/pouncing-kitty_large.png" style=" width: 77px; margin-left:-77px; margin-top:-66px;"alt="kittenPouncing">
+</div>
+<div class="row" >
+<img src="images/catTree2.jpg" style="width: 188px; "alt="catTreeDeadMice">   
+    <div class="column">
+        <h1 class="centerText">404</h1>
+        <h1 class="centerText">Whoops!</h1>
+    <h2>The cat is finding all these mice but we can't find your page...</h2>
+    </div>
+</div>
+        <div class="row">
+            <button class="button morePadding lightGrey marginTop marginBottom hoverRed" onclick="location.href='index.html'" >GO HOME</button>
+        </div>
+
+
+  
+    
+  <!-- grid -->
+  </div>
+  
+  <!-- container -->
+</div>
+
+    <footer class="centerText padding64 opacityOff" >
+  <div class="reallyBig margin16 ">
+  <a href="https://github.com/stealthmission" target="_blank" class="blackChocolateText "><i class="fab fa-github opacityHover"></i></a>
+  <a href="https://codepen.io/stealthmission" target="_blank" class="blackChocolateText "><i class="fab fa-codepen opacityHover"></i></a>
+  <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="blackChocolateText "><i class="fab fa-linkedin opacityHover"></i></a>
+  </div>
+</footer>
+ 
+<script>
+$(document).mousemove(function(mouse){
+
+$("#cat").stop().animate({left:mouse.pageX, top:mouse.pageY});
+
+});
+// the menu on small screens when clicking the menu button
+function toggleFunction() {
+    var x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
