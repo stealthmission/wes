@@ -144,7 +144,6 @@
         <div class="container">
               <div class="container">
           <h4><b></b></h4>
-           <!--<h5 class="seafoamText"><i class="fas fa-tachometer-alt fa-fw marginRight"></i>Jan 2006 - <span class="tag otherGreen round">Current</span></h5>-->
           <p><b>Web developer, HTML5/CSS3 tutor</b> and <b>graphic design student.</b> <br>My favorite part about web development is the ablitiy to build and create quality content focused around the user experience. One of my favorite projects so far has been helping others learn HTML5 and CSS3! I truly enjoy being able to work with students and help them achieve their goals. While in turn solidifying my own knowledge of the subjects. In development believe that the collaboration between user and developer should be of utmost importance, and that we should strive to create an interface that is both easy to use and intricately designed. I have been described as detail oriented and enjoy creating work that is both aesthetically pleasing and easy to use. I enjoy the process of executing a project's finer details, from intricate color scheming to expertly designed layout. Some goals of mine in the development field include finding a career that leaves me both creatively stimulated and enthusiastic about future projects.<br>
               In my free time, I enjoy building electric bikes. I use them to explore San Diego’s back country, and to reduce my carbon footprint.
 </p>
@@ -233,6 +232,7 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 
     
  <div class="row white">
+     <div class="rowWrapReverse">
      <!-- Auto International -->
         <div class="otherboxShadow column marginBottom white" style="margin:22px; min-width:333px; max-width:333px;">
             <div>
@@ -282,9 +282,7 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 				<h3>Awesome forms</h3>
 			</div>
 			<div>
-				<p>These forms are awesome because they were+
-                    
-                    created with the user in mind.</p><br>
+				<p>These forms are awesome because they were created with the user in mind.</p><br>
 			</div>
 				<div class="centerText">
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="document.getElementById('id2').style.display='block'">MORE INFO</button>
@@ -302,16 +300,55 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
 				</div>
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('pages/gallery.html','_self')">THE GALLERY</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('','_self')">THE GALLERY</button>
 				</div>
         </div>
              </div>
    
-         <div class="column" ><p>        This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.This is my DIV element.</p></div>
+         <div class="column" ><p>        Forms packed with functionality!</p></div>
+
+     </div>
+             </div>
+             
+             
+             
+                  <!-- Responsive design projects -->
+        <div class="otherboxShadow column white" style="margin:22px; min-width:333px; max-width:333px;">
+            <div>
+            <img src="images/road-trip-1641709.jpg" style="width:100%; height: 222px; " alt="blackeBike">
+			</div>
+            <div class="padding">
+			<div>
+				<h3>Responsive design projects</h3>
+			</div>
+			<div>
+				<p>Projects from freeCodeCamp's 300 hour responsive web design certification. </p><br>
+			</div>
+				<div class="centerText">
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="document.getElementById('id6').style.display='block'">MORE INFO</button>
+				</div>
+            </div>
+        </div>
+           <!-- onClick display this div -->
+         <div id="id6" class="modal">
+     <div style="max-width: 696px; background-color: #fff; margin:auto; padding: 0px 20px 0px 20px;">
+         <span onclick="document.getElementById('id6').style.display='none'"  class="close">&times;</span>
+       <div class="row justifySpaceEvenly" style="padding-top: 22px;">
+         <img src="" alt="imgNoWorky" width="333">
+        <div class="column">
+
+                <div class="centerText row">
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('','_self')">THE PAGE</button>
+				</div>
+        </div>
+             </div>
+   
+         <div class="column" ><p>        These projects allowed me to practice all of the skills, principles, and concepts I have learned from the courses: HTML, CSS, Visual Design, Accessibility, and more. Following completion of the projects I was allowed to claim a certification in Responsive Web Design from freeCodeCamp. </p></div>
 
      </div>
 </div>
-    
+         </div>
+   
     
  <div class="row white">
 <!-- TwilioQuest JavaScript Solutions -->
@@ -450,12 +487,12 @@ After a few years I transitioned into Subaru and Mitsubishi. As of today I speci
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
 				</div>
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('http://dev-auto-international.pantheonsite.io/','_self')">THE PAGE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('','_self')">THE PAGE</button>
 				</div>
         </div>
              </div>
    
-         <div class="row" ><p>        Some of my other works are comprised together in one page. </p></div>
+         <div class="row" ><p>        Some of my other works are comprised together in one page: FizzBuzz, loops, conditionals and more! </p></div>
 
      </div>
      </div>
@@ -620,6 +657,7 @@ let modal2 = document.getElementById('id2');
 let modal3 = document.getElementById('id3');
 let modal4 = document.getElementById('id4');
 let modal5 = document.getElementById('id5');
+let modal5 = document.getElementById('id6');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -637,6 +675,9 @@ window.onclick = function(event) {
   }
   if (event.target == modal5) {
     modal5.style.display = "none";
+  }
+  if (event.target == modal6) {
+    modal6.style.display = "none";
   }
 
 }
