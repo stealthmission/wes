@@ -278,9 +278,22 @@ noMargin {
   width: 100%;
   justify-content: center;
 }
+.rowWrapReverse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  justify-content: center;
+}
 .column {
   display: flex;
   flex-direction: column;
+  flex-basis: auto;
+  flex: 1;
+}
+.columnReverse {
+  display: flex;
+  flex-direction: column-reverse;
   flex-basis: auto;
   flex: 1;
 }
