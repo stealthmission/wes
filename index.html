@@ -263,9 +263,6 @@
        <div class="row justifySpaceEvenly" style="padding-top: 22px;">
          <img src="images/ai.gif" alt="autoInternational gif" width="333">
         <div class="column">
-            <div class="centerText ">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
-				</div>
                 <div class="centerText row">
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('http://dev-auto-international.pantheonsite.io/','_blank')">THE SITE</button>
 				</div>
@@ -304,7 +301,12 @@
          <img src="images/404.gif" alt="404 Page" width="333">
            </div>
          
+                     <div class="row centerText ">
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHidden()">THE CODE</button>
+				</div>
+         
                      <!-- onClick display this div -->
+         
             <div id="hiddenDiv" class="row" style="display: none;">
             <p class="codepen" data-height="333" data-theme-id="dark" data-default-tab="html" data-user="stealthmission" data-slug-hash="zYZdKQe" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Custom 404 Page">
   <span>See the Pen <a href="https://codepen.io/stealthmission/pen/zYZdKQe">
@@ -314,12 +316,9 @@
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             </div>
          
-        <div class="row">
-            <div class="centerText ">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHidden()">THE CODE</button>
-				</div>
+
             
-        </div>
+
              
    
          <div class="row" ><p>        A 404 page using jQuery, which is a JavaScript libary, and an attempt at some humor. jQuery made HTML manipulation, event handling and animation much easier to use for this project.  </p></div>
@@ -330,11 +329,12 @@
      </div>
      </div>
      <!-- 404 page -->
+         
  <!-- TwilioQuest JavaScript Solutions -->
 
         <div class="otherboxShadow column marginBottom white" style="margin:22px; min-width:333px; max-width:333px;">
             <div>
-            <img src="images/code2.jpg" style="width:100%; height: 222px; " alt="dataCenter">
+            <img src="images/code2.jpg" style="width:100%; height: 222px; " alt="compCode">
 			</div>
             <div class="padding">
 			<div>
@@ -344,7 +344,7 @@
 				<p>Here are my solutions to Twilio's educational game</p>
 			</div>
 				<div class="centerText">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="document.getElementById('id3').style.display='block'">MORE INFO</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="document.getElementById('id3').style.display='block';">MORE INFO</button>
 				</div>
             </div>
         </div>
@@ -356,10 +356,10 @@
      <div style="max-width: 696px; background-color: #fff; margin:auto; padding: 0px 20px 0px 20px;">
          <span onclick="document.getElementById('id3').style.display='none'"  class="close">&times;</span>
        <div class="row justifySpaceEvenly" style="padding-top: 22px;">
-         <img src="images/tSolutions.gif" alt="solutions demo" width="444">
+         <img id="div2" src="images/tSolutions.gif" alt="solutions demo" width="444">
        </div>           
            
-        <div id="hiddenDiv1" class="row" style="display: none;">
+        <div id="div1" class="row" style="display: none;">
            <p class="codepen" data-height="333" data-theme-id="dark" data-default-tab="html" data-user="stealthmission" data-slug-hash="YzZVKaL" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TwilioQuest JavaScript Solutions">
   <span>See the Pen <a href="https://codepen.io/stealthmission/pen/YzZVKaL">
   TwilioQuest JavaScript Solutions</a> by stealthmission (<a href="https://codepen.io/stealthmission">@stealthmission</a>)
@@ -371,7 +371,7 @@
            
         <div class="row">
             <div class="centerText ">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHidden1()">THE CODE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="showHide()">THE CODE</button>
 				</div>
         </div>
            
@@ -380,7 +380,7 @@
          <div class="row" ><p>        Since some of the exercises were difficult for me and I could only find a limited amount of info, I decided to post my own solutions.</p></div>
          
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('http://wesgilmour.com/pages/twilioquestSolutions.html','_self')">THE PAGE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('pages/twilioquestSolutions.html','_self')">THE PAGE</button>
 				</div>
 
      </div>
@@ -417,7 +417,7 @@
         <div class="column">
 
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('','_self')">THE PAGE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('pages/responsiveDesign.html','_self')">THE PAGE</button>
 				</div>
         </div>
              </div>
@@ -427,6 +427,7 @@
      </div>
 </div>
  <!-- Responsive design projects -->
+     
          <!-- Awesome forms -->
         <div class="otherboxShadow column white" style="margin:22px; min-width:333px; max-width:333px;">
             <div>
@@ -455,7 +456,7 @@
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
 				</div>
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('','_self')">THE GALLERY</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick=" window.open('pages/awesomeForms.html','_self')">THE FORMS</button>
 				</div>
         </div>
              </div>
@@ -494,7 +495,7 @@
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">THE CODE</button>
 				</div>
                 <div class="centerText row">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('','_self')">THE PAGE</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('pages/otherWorks.html','_self')">THE PAGE</button>
 				</div>
         </div>
              </div>
@@ -511,9 +512,9 @@
    
     <!-- blog -->
     
-            <h3 class="centerText blackChocolateText" style= "margin: 0px 0px 0px 0px;">MY BLOG</h3>
+            <h3 id="blog" class="centerText blackChocolateText" style= "margin: 0px 0px 0px 0px;">MY BLOG</h3>
   <p class="centerText blackChocolateText" style= "margin: 0px 0px 0px 0px;"><em>Here's what is on my mind.</em></p><br>
-    <div id="blog" style="padding:5px;" class="row">
+    <div  style="padding:5px;" class="row">
 
 		<div id="featuredPost" class="boxShadow row marginBottom white" style=" max-width: 777px; position: relative;">
         	<div>
@@ -530,7 +531,7 @@
 				<p>Take a look at the steps I took to create my portfolio page. I will explain each part of the process. Sitemaps, wireframes, mockups, templates, testing, SEO and more! </p>
 			</div>
 				<div class="centerText">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">CONTINUE READING...</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="window.open('pages/documentation.html','_self')">CONTINUE READING...</button>
 				</div>
             </div>
         </div>
@@ -545,7 +546,7 @@
 				<h3>Electric Bicycle Gallery</h3>
 			</div>
 			<div>
-				<p>A simple responsive gallery using templates that showcase some of the electric bikes I have built.</p>
+				<p>A simple responsive gallery that automatically resizes the image containers based on screen size. Using templates that showcase some of the electric bikes I have built.</p>
 			</div>
 				<div class="centerText">
 					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="location.href='pages/gallery.html';">TO THE GALLERY</button>
@@ -555,17 +556,17 @@
                 
         <div class="otherboxShadow column marginBottom white" style="margin:22px; min-width:333px; max-width:333px;">
             <div>
-            <img src="images/tyres.jpg" style="width:100%" alt="tyres">
+            <img src="images/toPost/bikeTrail.png" style="width:100%" height="244px" alt="ride">
 			</div>
             <div class="padding">
 			<div>
-                <h3>Tire recycling:</h3><h4>The most problematic sources of waste</h4>
+                <h3 class="centerText">Top 10:<br> Places to ride eBikes in San Diego!</h3>
 			</div>
 			<div>
-				<p>Progress in recycling has resulted in a major reduction in dumping.</p>
+				<p>These are my favorite places to ride my electric bike in San Diego.</p>
 			</div>
 				<div class="centerText">
-					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="">CONTINUE READING...</button>
+					<button class="button morePadding black round hoverRed marginTop marginBottom" onclick="location.href='pages/top10.html';">CONTINUE READING...</button>
 				</div>
             </div>
         </div>
@@ -638,6 +639,7 @@ function toggleFunction() {
     }
 }
 
+    //show the hidden divs
 function showHidden() {
   var x = document.getElementById("hiddenDiv");
   if (x.style.display === "none") {
@@ -646,13 +648,19 @@ function showHidden() {
     x.style.display = "none";
   }
 }
-function showHidden1() {
-  var x = document.getElementById("hiddenDiv1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+
+// switch div1 hide,div2 show
+function showHide() {
+if (document.getElementById('div1')) {
+    if (document.getElementById('div1').style.display == 'none') {
+        document.getElementById('div1').style.display = 'block';
+        document.getElementById('div2').style.display = 'none';
+    }
+    else {
+        document.getElementById('div1').style.display = 'none';
+        document.getElementById('div2').style.display = 'block';
+    }
+}
 }
     
 
