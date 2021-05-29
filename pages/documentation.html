@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Wes Gilmour - Documentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,900;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/logo2.png">
+	<link rel="stylesheet" type="text/css" href="prism.css">
+</head>
+<body>
+	<script src="prism.js"></script>
+<!-- navigation -->
+
+<div class="top">
+  <div class="navBar " id="navigation">
+      
+          <a class="barItem button hoverRed hideMedium hideLarge right" href="javascript:void(0);" onclick="toggleFunction()" title="activate smolNav">
+        
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../index.html#about" class="barItem button hideSmall hoverRed">HOME</a>
+    <a href="../index.html#projects" class="barItem button hideSmall hoverRed"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button hideSmall hoverRed"><i class="fab fa-microblog"></i> BLOG</a>
+    <a href="../index.html#contact" class="barItem button hideSmall hoverRed"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="barItem button hideSmall right hoverRed">
+      <i class="fa fa-search"></i>
+    </a>
+      <!-- social -->
+  <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="barItem button right hoverRed">
+   <i class="fab fa-linkedin opacityHover"></i>
+    </a>
+      <a href="https://codepen.io/stealthmission" target="_blank" class="barItem button right hoverRed">
+         <i class="fab fa-codepen opacityHover"></i>
+                  </a>
+                  <a href="https://github.com/stealthmission" target="_blank" class="barItem button right hoverRed">
+   <i class="fab fa-github opacityHover"></i>
+                          </a>
+  </div>
+
+  <!-- small navigation -->
+  <div id="smolNav" class="smolNavBlock white hide hideLarge hideMedium">
+
+    <a href="../index.html#about" class="barItem button hoverRed" onclick="toggleFunction()">HOME</a>
+    <a href="../index.html#projects" class="barItem button hoverRed" onclick="toggleFunction()">PROJECTS</a>
+    <a href="../index.html#blog" class="barItem button hoverRed" onclick="toggleFunction()">BLOG</a>
+    <a href="../index.html#contact" class="barItem button hoverRed" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="barItem button hoverRed">SEARCH</a>
+  </div>
+</div>
+
+
+    <!-- page container -->
+    <div style="background-color: #6C756B">
+<div id="home" class="pageContent blackChocolateText" style="max-width:1400px; background-color: #93ACB5; ">
+
+
+  <div class="padding" style="max-width:1100px; margin: auto;">
+          <div class="tooltip close"><span onclick="location.href='../index.html#projects'"  class="close hoverRed blackChocolateText" style="margin-right: 22px; padding: 0px 20px 0px 20px;">&times;</span><span class="tooltiptext">Exit</span>
+         </div>
+      
+        <h1>This page contains: </h1><br>
+        <h2></h2>
+
+  </div>
+  
+  <!-- container -->
+</div>
+</div>
+
+
+<!-- footer -->
+<footer class="centerText padding64  opacityOff" style="background-color: #6C756B; margin: 0px;">
+  <a href="#home" class="button black round hoverRed"><i class="fa fa-arrow-up marginRight"></i>To the top</a>
+  <div class="reallyBig margin16 ">
+  <a href="https://github.com/stealthmission" target="_blank" class="blackChocolateText "><i class="fab fa-github opacityHover"></i></a>
+  <a href="https://codepen.io/stealthmission" target="_blank" class="blackChocolateText "><i class="fab fa-codepen opacityHover"></i></a>
+  <a href="https://www.linkedin.com/in/wes-gilmour-9325a41a9/" target="_blank" class="blackChocolateText "><i class="fab fa-linkedin opacityHover"></i></a>
+  </div>
+</footer>
+
+ 
+<script>
+
+
+
+// the menu on small screens when clicking the menu button
+function toggleFunction() {
+    let x = document.getElementById("smolNav");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
