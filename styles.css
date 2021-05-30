@@ -27,12 +27,13 @@ body {
 /* background images */
 .bgImage, .bgImage2, .bgImage3, .bgImage4 {
   background-attachment: fixed;
-  background-position: center;
+  background-position: center -22px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+
 }
 .bgImage {
- background-image: url("images/bgImage2.jpg");
+ background-image: url("images/background3.jpg");
  height: 33%;
 }
 
