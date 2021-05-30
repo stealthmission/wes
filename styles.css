@@ -35,6 +35,7 @@ body {
 .bgImage {
  background-image: url("images/background3.jpg");
  height: 33%;
+ opacity: 88%;
 }
 
 
