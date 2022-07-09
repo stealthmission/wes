@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CSS Style Guide</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>CSS Style Guide</h1>
+                            <h2 class="subheading">This is the Code Style guide for CSS</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Wes Gilmour</a>
+                                on April 17, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Indentation</h2>
+                        <p>Use an indent with tabs, no spaces.</p>
+                        <blockquote class="blockquote">
+                            &lt; div class="post-heading"&gt;<br>
+                            &emsp;&lt;CSS Style Guide&gt;</blockquote>
+
+                        <h2 class="section-heading">Capitalization in ID's and Names</h2>
+                        <p>ID and class names should be in lowerCamelCase.</p>
+                        <blockquote class="blockquote">.styleGuide {</blockquote>
+                        <p>HTML elements should be in lowercase.</p>
+                        <blockquote class="blockquote">body, div {</blockquote>
+                           
+                        <h2 class="section-heading">Write Valid CSS</h2>
+                        <p>Validate any CSS writen through a CSS validator and make sure no errors are present at time of submission.</p>
+                        
+                        <h2 class="section-heading">Comments</h2>
+                        <p>Please include comments, if performance is an issue they can be removed with a CSS minifier.</p>
+                        
+                            
+                        <h2 class="section-heading">Colors</h2>
+                        <p>Use capital letters when using hexadecimal notation. Three and Six digits are acceptable, if possible use 3 digit as to save a few bytes of download time. </p>
+                        <blockquote class="blockquote">/* Good */<br>color: #FFS;<br>
+                            color: #ET8365; <br>
+                            </blockquote>
+                            <blockquote class="blockquote">/* Bad */<br>color: #ffs;    </blockquote>
+
+                        <h2 class="section-heading">Dimensions</h2>
+                        <p>Specify units in either em, px, or %g</p>
+                        <blockquote class="blockquote">/* Good */<br>height: 10px;  </blockquote>
+                        
+                        <blockquote class="blockquote">/* Bad */<br>
+                            height: 10;</blockquote>
+
+                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
+                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                        </div>
+                </div>
+            </div>
+        </article>
+ 
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
