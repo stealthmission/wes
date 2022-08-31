@@ -189,6 +189,9 @@ body {
 .right {
     float: right !important;
 }
+.bRadius {
+    border-radius: 12px;
+}
 
 
 /* bgImage and logo */
