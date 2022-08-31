@@ -22,6 +22,7 @@ html {
 }
 body {
     margin: 0;
+    background-color: #E5E4DD;
 }
 
 /* background images */
@@ -287,6 +288,7 @@ noMargin {
   flex-wrap: wrap-reverse;
   width: 100%;
   justify-content: center;
+  background-color: #E5E4DD;
 }
 .column {
   display: flex;
