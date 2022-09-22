@@ -132,6 +132,9 @@ body {
 }
 
 /* color and things similar */
+.red{
+    color: #A72608;
+}
 .white {
     color: #090C02 !important;
     background-color: #fff !important;
